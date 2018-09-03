@@ -13,6 +13,15 @@ let Tlist_Use_Right_Window=1 "在Vim窗口右侧显示taglist窗口
 "设置taglist打开关闭的快捷键F4
 map <F4> :TlistToggle<CR>
 
+"设置鼠标
+set mouse=a
+
+"输入搜索内容时就显示搜索结果
+set incsearch
+
+"搜索时高亮显示被找到的文本
+set hlsearch
+
 "语法高亮
 syntax on
 
