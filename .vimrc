@@ -50,6 +50,16 @@ inoremap [ []<ESC>i
 inoremap { {}<ESC>i
 inoremap < <><ESC>i
 
+"上下分屏时，使用Ctrl+j/k键设置窗口大小
+nmap <C-j> :resize +3<CR>
+nmap <C-k> :resize -3<CR>
+
+"垂直分屏时，使用Ctrl+l/h键设置窗口大小
+nmap <C-l> :vertical resize +3<CR>
+nmap <C-h> :vertical resize -3<CR>
+
+"使用Ctrl+w+=来平分屏幕
+
 "开启光亮光标行
 set cursorline
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=green guifg=blue
@@ -58,7 +68,8 @@ hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=green guifg=blue
 set cursorcolumn
 hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=green guifg=blue
 
-"colorscheme evening
+"使用industry配色方案
+colorscheme industry
 
 "自动写入作者信息
 map <F5> :call TitleDet()<cr>
