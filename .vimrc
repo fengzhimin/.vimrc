@@ -52,11 +52,11 @@ inoremap < <><ESC>i
 
 "开启光亮光标行
 set cursorline
-"hi CursorLine   cterm=NONE ctermbg=255
+hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=green guifg=blue
 
 "开启高亮光标列
 set cursorcolumn
-"hi CursorColumn cterm=NONE ctermbg=255
+hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=green guifg=blue
 
 "colorscheme evening
 
