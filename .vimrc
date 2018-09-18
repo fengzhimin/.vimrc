@@ -1,6 +1,13 @@
+" 设置QuickFix
+map <F5> :make <CR>
+map <F6> :cl <CR>
+map <F7> :cw <CR>
+map <F9> :cn <CR>
+map <F10> :cp <CR>
+
 " 设置NerdTree
-map <F3> :NERDTreeMirror<CR>
-map <F3> :NERDTreeToggle<CR>
+map <F2> :NERDTreeMirror<CR>
+map <F2> :NERDTreeToggle<CR>
 
 "
 " taglist
@@ -10,8 +17,8 @@ let Tlist_Show_One_File = 1
 let Tlist_WinWidth=40        "设置taglist宽度
 let Tlist_Exit_OnlyWindow=1  "tagList窗口是最后一个窗口，则退出Vim
 let Tlist_Use_Right_Window=1 "在Vim窗口右侧显示taglist窗口
-"设置taglist打开关闭的快捷键F4
-map <F4> :TlistToggle<CR>
+"设置taglist打开关闭的快捷键F3
+map <F3> :TlistToggle<CR>
 
 "设置鼠标
 set mouse=a
@@ -51,12 +58,12 @@ inoremap { {}<ESC>i
 inoremap < <><ESC>i
 
 "上下分屏时，使用Ctrl+j/k键设置窗口大小
-nmap <C-j> :resize +3<CR>
-nmap <C-k> :resize -3<CR>
+map <C-j> :resize +3<CR>
+map <C-k> :resize -3<CR>
 
 "垂直分屏时，使用Ctrl+l/h键设置窗口大小
-nmap <C-l> :vertical resize +3<CR>
-nmap <C-h> :vertical resize -3<CR>
+map <C-l> :vertical resize +3<CR>
+map <C-h> :vertical resize -3<CR>
 
 "使用Ctrl+w+=来平分屏幕
 
@@ -72,7 +79,7 @@ hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=green guifg=blue
 colorscheme industry
 
 "自动写入作者信息
-map <F5> :call TitleDet()<cr>
+map <F4> :call TitleDet()<cr>
 function AddTitle()
     call append(0,"/******************************************************")
     call append(1,"* Author       : fengzhimin")
