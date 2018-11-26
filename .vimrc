@@ -1,9 +1,10 @@
 " 设置QuickFix
 map <F5> :make <CR>
-map <F6> :cl <CR>
-map <F7> :cw <CR>
-map <F9> :cn <CR>
-map <F10> :cp <CR>
+map <F6> :make install <CR>
+map <F7> :cl <CR>   "列出所有错误
+map <F8> :cw <CR>   "如果有错误，则打开quickfix窗口
+map <F9> :cn <CR>   "调到下一个错误
+map <F10> :cp <CR>   "调到上一个错误
 
 " 设置NerdTree
 map <F2> :NERDTreeMirror<CR>
@@ -76,7 +77,7 @@ set cursorcolumn
 hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=green guifg=blue
 
 "使用industry配色方案
-colorscheme industry
+colorscheme default 
 
 "自动写入作者信息
 map <F4> :call TitleDet()<cr>
