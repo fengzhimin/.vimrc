@@ -1,3 +1,13 @@
+" 设置cscope快捷键
+nmap <C-[>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-[>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-[>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+nmap <C-[>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-[>f :cs find f <C-R>=expand("<cword>")<CR><CR>
+nmap <C-[>i :cs find i <C-R>=expand("<cword>")<CR><CR>
+nmap <C-[>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-[>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+
 " 设置QuickFix
 map <F5> :make <CR>
 map <F6> :make install <CR>
@@ -22,7 +32,7 @@ let Tlist_Use_Right_Window=1 "在Vim窗口右侧显示taglist窗口
 map <F3> :TlistToggle<CR>
 
 "设置鼠标
-set mouse=a
+"set mouse=a
 
 "输入搜索内容时就显示搜索结果
 set incsearch
@@ -45,8 +55,8 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 "建议开启expandtab选项，会自动将tab扩展很空格，代码缩进会更美观
-"set expandtab
-set noexpandtab
+set expandtab
+"set noexpandtab
 
 "switch case 对齐风格
 set cino=g0,:0
@@ -77,7 +87,7 @@ set cursorcolumn
 hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=green guifg=blue
 
 "使用industry配色方案
-colorscheme default 
+colorscheme slate
 
 "自动写入作者信息
 map <F4> :call TitleDet()<cr>
